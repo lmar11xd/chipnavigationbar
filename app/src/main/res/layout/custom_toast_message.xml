@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/rectangle"
+    android:id="@+id/toastContainer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <FrameLayout
+            android:id="@+id/toastIndicator"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#3EAA56" />
+
+        <TextView
+            android:id="@+id/toastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/open_sans"
+            android:paddingLeft="8dp"
+            android:text="Mensaje de alerta"
+            android:textColor="#363636"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/toastIndicator"></TextView>
+    </RelativeLayout>
+</RelativeLayout>
